@@ -125,6 +125,8 @@ section
 span
 {
     color: var(--maion-color);
+    font-size: 3.2rem;
+    width: 700;
 }
 
 .home-content h1{
