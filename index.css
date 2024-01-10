@@ -132,6 +132,10 @@ span
     width: 700;
 }
 
+.home-span{
+    color: var(--maion-color);
+}
+
 .home-content h1{
     font-size: 5.6rem;
     width: 700;
