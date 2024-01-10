@@ -127,13 +127,9 @@ span
     color: var(--maion-color);
 }
 
-.home-span .home-h3 {
+.home-h3 {
     font-size: 3rem;
     width: 700;
-}
-
-.home-span{
-    color: var(--maion-color);
 }
 
 .home-content h1{
