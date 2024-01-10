@@ -127,8 +127,8 @@ span
     color: var(--maion-color);
 }
 
-.home-span {
-    font-size: 3.2rem;
+.home-span .home-h3 {
+    font-size: 3rem;
     width: 700;
 }
 
