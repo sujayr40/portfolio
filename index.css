@@ -519,10 +519,6 @@ span
         padding: 2rem 3%;
     }
 
-    .logo {
-        width: 20dvw;
-    }
-
     section {
         padding: 10rem 3% 2rem;
     }
@@ -626,6 +622,10 @@ span
 @media (max-width: 617px) {
     .portfolio-container {
         grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width: 20dvw;
     }
 }
 
