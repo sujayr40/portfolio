@@ -51,7 +51,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // ======================== typed js ==================
 const typed = new Typed('.multiple-text', {
-    strings: ['Web Development', 'Digital Marketing', 'Digital Product',],
+    strings: ['Web Developer', 'Digital Marketer', 'Digital Product Seller',],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -152,3 +152,12 @@ form.addEventListener("submit", (e) => {
         return false;
     }
 });
+
+// =================Popup Display=====================
+function openPopup(popupId) {
+    document.getElementById(popupId).style.display = "block";
+}
+
+function closePopup(popupId) {
+    document.getElementById(popupId).style.display = "none";
+}
