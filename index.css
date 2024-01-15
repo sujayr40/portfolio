@@ -31,6 +31,11 @@ body
     color: var(--text-color);
 }
 
+.blurred
+{
+    filter: blur(2px);
+}
+
 section
 {
     min-height: 100vh;
@@ -58,10 +63,7 @@ section
 
 .logo
 {
-    font-size: 2.5rem;
-    color: var(--text-color);
-    font-weight: 600;
-    cursor: default;
+    width: 10dvw;
 }
 
 .navbar a
@@ -94,7 +96,7 @@ section
 
 .home-img img
 {
-    height: 520px;
+    /* height: 520px; */
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
 }
@@ -127,7 +129,7 @@ span
     color: var(--maion-color);
 }
 
-.home-h3 {
+.home-h3{
     font-size: 3rem;
     width: 700;
 }
@@ -183,6 +185,7 @@ span
 .button:hover
 {
     box-shadow: none;
+    cursor: pointer;
 }
 
 .about
@@ -197,7 +200,7 @@ span
 .about-img img
 {
     width: 35vw;
-    height: 500px;
+    /* height: 500px; */
 }
 .heading
 {
@@ -253,7 +256,8 @@ span
     transform: scale(1.02);
 }
 
-.services-box i
+.services-box i,
+.model i
 {
     font-size: 7rem;
     color: var(--maion-color);
@@ -268,6 +272,30 @@ span
 {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+
+.model 
+{
+    width: 40dvw;
+    display: none;
+    position: fixed;
+    /* justify-content: center;
+    align-items: center; */
+    top: -5%;
+    left: -30%;
+    transform: translate(-50, -50);
+    padding: 1.6rem;
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 2rem;
+}
+
+.about-content .model
+{
+    width: 80dvw;
+    left: -80%;
+    text-align: center;
 }
 
 .portfolio
@@ -359,6 +387,16 @@ span
     color: var(--second-bg-color);
 }
 
+.services-box img
+{
+    border-radius: 1rem;
+}
+
+.contact
+{
+    background-color: var(--second-bg-color);
+}
+
 .contact h2
 {
     margin-bottom: 3rem;
@@ -391,8 +429,8 @@ span
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
-    border: 1px solid var(--maion-color);
+    background: var(--bg-color);
+    /* border: 1px solid var(--maion-color); */
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -439,7 +477,7 @@ span
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p
@@ -487,6 +525,17 @@ span
 
     .portfolio {
         padding-bottom: 7rem;
+    }
+
+    .model,
+    .about-content .model {
+        width: 93dvw;
+        top: 0;
+        left: 0;
+    }
+
+    .model2 {
+        left: -105%;
     }
 
     .services {
@@ -576,6 +625,12 @@ span
     }
 }
 
+@media (max-width: 580px) {
+    .model2 {
+        left: 0%;
+    }
+}
+
 @media (max-width: 450px) {
     html {
         font-size: 50%;
@@ -604,3 +659,4 @@ span
         margin-bottom: 2rem;
     }
 }
+
