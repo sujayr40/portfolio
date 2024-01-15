@@ -519,6 +519,10 @@ span
         padding: 2rem 3%;
     }
 
+    .logo {
+        width: 15dvw;
+    }
+
     section {
         padding: 10rem 3% 2rem;
     }
