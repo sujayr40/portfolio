@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webitize</title>
+    <title>webitize</title>
+    <link rel="icon" href="./image/Fevicon.png" type="image/x-icon">
     
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Webitize</a>
+        <img src="./image/wide logo webitize.png" alt="" class="logo">
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -28,21 +29,21 @@
     <!-- home secrtion design  -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Welcome to</h3>
+            <h3>Wellcome to</h3>
             <h1>WEBITIZE</h1>
-            <h3>And Our Services <span class="multiple-text"></span></h3>
+            <h3>We are a <span class="multiple-text"></span></h3>
             <h3 class="home-h3">Good Business Need <br><span>A Great Website!</span></h3>
-            <p>We are ready to help you create your business website, make your business progress and develop with a good website.</p>
+            <p>We are ready to help you create your business website, make your business progress and develop with a good website. digital marketing for your business.</p>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://wa.me/7063232363?text=Hello%20I%20am%20interested%20in%20Portfolio.%20Can%20you%20help%20me%20with%20my%20quary"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="https://wa.me/7063232363?text=Hello%20I%20am%20interested%20in%20Webitize.%20Can%20you%20help%20me%20with%20my%20query"><i class='bx bxl-whatsapp' ></i></a>
                 <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
                 <a href="#"><i class='bx bxl-linkedin' ></i></a>
             </div>
-            <a href="#" class="button">Download CV</a>
+            <a href="https://wa.me/7063232363?text=Hello%20I%20am%20interested%20in%20Webitize.%20Can%20you%20help%20me%20with%20my%20query" class="button">Contact Us</a>
         </div>
         <div class="home-img">
-            <img src="image/building-hd-png-intelligent-building-hd-video-solution-01-png-600.png" alt="">
+            <img src="./image/building-hd-png-intelligent-building-hd-video-solution-01-png-600.png" alt="">
             
         </div>
     </section>
@@ -50,13 +51,19 @@
     <!-- about section design -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="image/building-hd-png-intelligent-building-hd-video-solution-01-png-600.png" alt="">
+            <img src="./image/building-hd-png-intelligent-building-hd-video-solution-01-png-600.png" alt="">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Us</span></h2>
             <h3>WEBITIZE</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus cumque inventore repellat reiciendis sapiente quis at mollitia id, sed sequi, odio cum quo, dolores pariatur. Modi dolorem ullam consectetur minima itaque nihil deleniti impedit id sapiente explicabo eveniet culpa magnam accusantium, autem nesciunt architecto ipsam magni?</p>
-            <a href="#" class="button">Read More</a>
+            <a href="#service" class="button" onclick="openPopup('aboutRead')">Read More</a>
+                <div id="aboutRead" class="model">
+                    <i class='bx bxs-buildings'></i>
+                    <h3>About <span>Us</span></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nemo fuga sed placeat. Odio voluptatem exercitationem voluptatum commodi magni pariatur, sint cumque beatae quas sunt rem, eveniet facere laboriosam doloribus animi reprehenderit! Rem non corrupti quasi laboriosam assumenda id! Officiis quas saepe odit dicta, aliquam nobis quidem, animi iusto, ullam quo accusamus vero et. Sint, nihil!</p>
+                    <button class="button" onclick="closePopup('aboutRead')">Close</button>
+                </div>
         </div>
     </section>
 
@@ -69,19 +76,37 @@
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorem facere eum odit provident exercitationem quisquam quam corrupti porro temporibus.</p>
-                <a href="#" class="button">Read More</a>
+                <a href="#service" class="button" onclick="openPopup('wbdv')">Read More</a>
+                <div id="wbdv" class="model">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nemo fuga sed placeat. Odio voluptatem exercitationem voluptatum commodi magni pariatur, sint cumque beatae quas sunt rem, eveniet facere laboriosam doloribus animi reprehenderit! Rem non corrupti quasi laboriosam assumenda id! Officiis quas saepe odit dicta, aliquam nobis quidem, animi iusto, ullam quo accusamus vero et. Sint, nihil!</p>
+                    <button class="button" onclick="closePopup('wbdv')">Close</button>
+                </div>
             </div>
             <div class="services-box">
                 <i class='bx bx-bar-chart-alt'></i>
                 <h3>Digital Marketing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorem facere eum odit provident exercitationem quisquam quam corrupti porro temporibus.</p>
-                <a href="#" class="button">Read More</a>
+                <a href="#service" class="button" onclick="openPopup('dtmkt')">Read More</a>
+                <div id="dtmkt" class="model model2">
+                    <i class='bx bx-bar-chart-alt'></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nemo fuga sed placeat. Odio voluptatem exercitationem voluptatum commodi magni pariatur, sint cumque beatae quas sunt rem, eveniet facere laboriosam doloribus animi reprehenderit! Rem non corrupti quasi laboriosam assumenda id! Officiis quas saepe odit dicta, aliquam nobis quidem, animi iusto, ullam quo accusamus vero et. Sint, nihil!</p>
+                    <button class="button" onclick="closePopup('dtmkt')">Close</button>
+                </div>
             </div>
             <div class="services-box">
                 <i class='bx bxs-shopping-bags'></i>
-                <h3>Digital Products</h3>
+                <h3>Digital Product</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorem facere eum odit provident exercitationem quisquam quam corrupti porro temporibus.</p>
-                <a href="#" class="button">Read More</a>
+                <a href="#service" class="button" onclick="openPopup('dtprd')">Read More</a>
+                <div id="dtprd" class="model">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Digital Product</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nemo fuga sed placeat. Odio voluptatem exercitationem voluptatum commodi magni pariatur, sint cumque beatae quas sunt rem, eveniet facere laboriosam doloribus animi reprehenderit! Rem non corrupti quasi laboriosam assumenda id! Officiis quas saepe odit dicta, aliquam nobis quidem, animi iusto, ullam quo accusamus vero et. Sint, nihil!</p>
+                    <button class="button" onclick="closePopup('dtprd')">Close</button>
+                </div>
             </div>
             
         </div>
@@ -148,6 +173,51 @@
         </div>
     </section>
 
+    <!-- blogs section  -->
+    <section class="services" id="blogs">
+        <h2 class="heading">Our <span>Blogs</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <img src="./image/blog-img1.png" alt="">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorem facere eum odit provident exercitationem quisquam quam corrupti porro temporibus.</p>
+                <a href="#blogs" class="button" onclick="openPopup('blog1')">Read More</a>
+                <div id="blog1" class="model">
+                    <img src="./image/blog-img1.png" alt="">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nemo fuga sed placeat. Odio voluptatem exercitationem voluptatum commodi magni pariatur, sint cumque beatae quas sunt rem, eveniet facere laboriosam doloribus animi reprehenderit! Rem non corrupti quasi laboriosam assumenda id! Officiis quas saepe odit dicta, aliquam nobis quidem, animi iusto, ullam quo accusamus vero et. Sint, nihil!</p>
+                    <button class="button" onclick="closePopup('blog1')">Close</button>
+                </div>
+            </div>
+            <div class="services-box">
+                <img src="./image/blog-img1.png" alt="">
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorem facere eum odit provident exercitationem quisquam quam corrupti porro temporibus.</p>
+                <a href="#blogs" class="button" onclick="openPopup('blog2')">Read More</a>
+                <div id="blog2" class="model model2">
+                    <img src="./image/blog-img1.png" alt="">
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nemo fuga sed placeat. Odio voluptatem exercitationem voluptatum commodi magni pariatur, sint cumque beatae quas sunt rem, eveniet facere laboriosam doloribus animi reprehenderit! Rem non corrupti quasi laboriosam assumenda id! Officiis quas saepe odit dicta, aliquam nobis quidem, animi iusto, ullam quo accusamus vero et. Sint, nihil!</p>
+                    <button class="button" onclick="closePopup('blog2')">Close</button>
+                </div>
+            </div>
+            <div class="services-box">
+                <img src="./image/blog-img1.png" alt="">
+                <h3>Digital Product</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorem facere eum odit provident exercitationem quisquam quam corrupti porro temporibus.</p>
+                <a href="#blogs" class="button" onclick="openPopup('blog3')">Read More</a>
+                <div id="blog3" class="model">
+                    <img src="./image/blog-img1.png" alt="">
+                    <h3>Digital Product</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nemo fuga sed placeat. Odio voluptatem exercitationem voluptatum commodi magni pariatur, sint cumque beatae quas sunt rem, eveniet facere laboriosam doloribus animi reprehenderit! Rem non corrupti quasi laboriosam assumenda id! Officiis quas saepe odit dicta, aliquam nobis quidem, animi iusto, ullam quo accusamus vero et. Sint, nihil!</p>
+                    <button class="button" onclick="closePopup('blog3')">Close</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
     <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
@@ -203,7 +273,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- custom js -->
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 
 </body>
 </html>
