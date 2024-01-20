@@ -161,3 +161,9 @@ function openPopup(popupId) {
 function closePopup(popupId) {
     document.getElementById(popupId).style.display = "none";
 }
+
+// ================chatbot==================
+window.embeddedChatbotConfig = {
+chatbotId: "kWg_clQWCf2l6mJXIgDXu",
+domain: "www.chatbase.co"
+}
