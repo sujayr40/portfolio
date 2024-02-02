@@ -559,6 +559,10 @@ span
         display: block;
     }
 
+    .logo {
+        width: 20dvw;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
